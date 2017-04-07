@@ -1,4 +1,4 @@
-package ${packageName}${fragmentPackage};
+package ${packageName}.${fragmentPackage};
 
 <#if includeCallbacks>import android.app.Activity;</#if>
 <#if includeCallbacks>import android.net.Uri;</#if>

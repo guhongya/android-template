@@ -20,13 +20,13 @@
 		<open file="${escapeXmlAttribute(srcOut)}/${escapeXmlAttribute(fragmentPackage)}/${className}.java" />
 					
 		<instantiate from="root/src/app_package/BlankContract.java.ftl"
-					to="${escapeXmlAttribute(srcOut)}/${escapeXmlAttribute(fragmentPackage)}/Contract.java" />
-		<open file="${escapeXmlAttribute(srcOut)}/${escapeXmlAttribute(fragmentPackage)}/Contract.java" />
+					to="${escapeXmlAttribute(srcOut)}/${escapeXmlAttribute(fragmentPackage)}/${contractName}.java" />
+		<open file="${escapeXmlAttribute(srcOut)}/${escapeXmlAttribute(fragmentPackage)}/${contractName}.java" />
 					
 		
 		<instantiate from="root/src/app_package/BlankPresenter.java.ftl"
-					to="${escapeXmlAttribute(srcOut)}/${escapeXmlAttribute(fragmentPackage)}/Presenter.java" />
-		<open file="${escapeXmlAttribute(srcOut)}/${escapeXmlAttribute(fragmentPackage)}/Presenter.java" />
+					to="${escapeXmlAttribute(srcOut)}/${escapeXmlAttribute(fragmentPackage)}/${presenterName}.java" />
+		<open file="${escapeXmlAttribute(srcOut)}/${escapeXmlAttribute(fragmentPackage)}/${presenterName}.java" />
 	<#else>
 
 		<instantiate from="root/src/app_package/BlankFragment.java.ftl"
